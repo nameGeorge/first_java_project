@@ -3,9 +3,7 @@ package org.example;
 public class Calculator {
     public static void main(String[] args) {
         int first = Input.scan();
-
         char operator = Input.readChar();
-
         int second = Input.scan();
 
         switch (operator) {
