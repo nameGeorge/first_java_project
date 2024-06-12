@@ -7,8 +7,6 @@ public class Input {
 
         Scanner sc = new Scanner(System.in);
         return sc.nextInt();
-
-
     }
 
     public static char readChar() {

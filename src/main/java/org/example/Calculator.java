@@ -1,27 +1,36 @@
 package org.example;
 
 public class Calculator {
-    public static void main(String[] args) {
+    public static String runCalculator() {
         int first = Input.scan();
 
         char operator = Input.readChar();
 
         int second = Input.scan();
 
+        String result;
         switch (operator) {
             case '+':
-                System.out.println(first + second);
+                 result = Integer.toString(first + second);
+
                 break;
             case '-':
-                System.out.println(first - second);
+                result = Integer.toString(first - second);
+
                 break;
             case '*':
-                System.out.println(first * second);
+                result = Integer.toString(first * second);
+
                 break;
             default:
-                System.out.println("Error");
+                result = "Error";
+
         }
 
+
+        return result;
     }
 
 }
+
+
