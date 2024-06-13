@@ -7,7 +7,6 @@ public class Calculator {
         char operator = Input.readChar();
 
         int second = Input.scan();
-
         switch (operator) {
             case '+':
                 System.out.println(first + second);
