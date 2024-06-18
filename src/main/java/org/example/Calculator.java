@@ -1,12 +1,14 @@
 package org.example;
 
 public class Calculator {
-    public static void main(String[] args) {
+    public static void runCalculator() {
+
         int first = Input.scan();
 
         char operator = Input.readChar();
 
         int second = Input.scan();
+
         switch (operator) {
             case '+':
                 System.out.println(first + second);
@@ -20,9 +22,8 @@ public class Calculator {
             default:
                 System.out.println("Error");
         }
-
     }
-
 }
+
 
 
